@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/app")
 
 public class AppController {
+	
 	@GetMapping("/msg")
 	public String myMessage() {
 		return "Hello SpringBoot";
@@ -22,5 +23,6 @@ public class AppController {
 	public String myAge(@PathVariable("ag") int age) {
 		return "My age is "+age;
 	}
+	
 	
 }
